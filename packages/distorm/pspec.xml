@@ -1,0 +1,46 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.pisilinux.org/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>distorm</Name>
+        <Homepage>https://github.com/gdabah/distorm</Homepage>
+        <Packager>
+            <Name>İbrahim KARAGÜZEL</Name>
+            <Email>karaguzelibrahim@gmail.com</Email>
+        </Packager>
+        <License>GPLv3</License>
+        <PartOf>programming.debug</PartOf>
+        <IsA>app:console</IsA>
+        <Summary>The ultimate disassembler (for AMD64, X86-64).</Summary>
+        <Description>diStorm3 is really a decomposer, which means it takes an instruction and returns a binary structure which describes it rather than static text, which is great for advanced binary code analysis.</Description>
+        <Archive sha1sum="e521676e2e5bfeadcdb46f54bbddc7b5c56816b6" type="targz">https://github.com/gdabah/distorm/archive/v3.3.0.tar.gz</Archive>
+        <BuildDependencies>
+            <Dependency>python-devel</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>distorm</Name>
+        <RuntimeDependencies>
+            <Dependency>python</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="library">/usr/lib/python2*</Path>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="data">/usr/include</Path>
+            <Path fileType="data">/usr/share/distorm</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2016-05-05</Date>
+            <Version>3.3.0</Version>
+            <Comment>First Pisi Built with Docker</Comment>
+            <Name>İbrahim KARAGÜZEL</Name>
+            <Email>karaguzelibrahim@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>
