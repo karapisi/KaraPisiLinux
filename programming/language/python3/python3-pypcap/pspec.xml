@@ -1,0 +1,54 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.pisilinux.org/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>python3-pypcap</Name>
+        <Homepage>https://github.com/pynetwork/pypcap</Homepage>
+        <Packager>
+            <Name>Blue DeviL</Name>
+            <Email>bluedevil@sctzine.com</Email>
+        </Packager>
+        <License>BSD</License>
+        <IsA>library</IsA>
+        <Summary>Python3 pcap module</Summary>
+        <Description>This is a simplified object-oriented Python wrapper for libpcap - the current tcpdump.org version, and the WinPcap port for Windows.</Description>
+        <Archive sha1sum="201d7b82d73ab55f9c45347e6739039dd59412f6" type="targz">https://github.com/pynetwork/pypcap/archive/v1.2.1.tar.gz</Archive>
+        <BuildDependencies>
+            <Dependency>python3-setuptools</Dependency>
+            <Dependency>libpcap-devel</Dependency>
+            <Dependency>python3-devel</Dependency>
+            <Dependency>python3-sphinx</Dependency>
+            <Dependency>python3-mock</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>python3-pypcap</Name>
+        <Summary>Python3 pcap module</Summary>
+        <RuntimeDependencies>
+            <Dependency>libpcap</Dependency>
+            <Dependency>python3</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="2">
+            <Date>2019-11-26</Date>
+            <Version>1.2.1</Version>
+            <Comment>Ver. bump</Comment>
+            <Name>Blue DeviL</Name>
+            <Email>bluedevil@sctzine.com</Email>
+        </Update>
+        <Update release="1">
+            <Date>2016-03-28</Date>
+            <Version>1.1.4</Version>
+            <Comment>First release, rebuilt with docker</Comment>
+            <Name>İbrahim KARAGÜZEL</Name>
+            <Email>karaguzelibrahim@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>

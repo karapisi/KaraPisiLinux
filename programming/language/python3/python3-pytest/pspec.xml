@@ -1,0 +1,41 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.pisilinux.org/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>python3-pytest</Name>
+        <Homepage>https://pytest.org</Homepage>
+        <Packager>
+            <Name>Blue DeviL</Name>
+            <Email>bluedevil@sctzine.com</Email>
+        </Packager>
+        <License>MIT</License>
+        <IsA>library</IsA>
+        <Summary>Python3 pytest module</Summary>
+        <Description>The pytest framework makes it easy to write small tests, yet scales to support complex functional testing for applications and libraries.</Description>
+        <Archive sha1sum="9c14f343c2d964e039cb33dab4721d0c8c923cbb" type="targz">https://github.com/pytest-dev/pytest/archive/5.3.1.tar.gz</Archive>
+        <BuildDependencies>
+            <Dependency>python3-setuptools</Dependency>
+            <Dependency>python3-devel</Dependency>
+            <!--<Dependency>python-sphinx</Dependency>-->
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>python3-pytest</Name>
+        <Summary>Python3 pytest module</Summary>
+        <Files>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2019-11-28</Date>
+            <Version>5.3.1</Version>
+            <Comment>First pisi release</Comment>
+            <Name>Blue DeviL</Name>
+            <Email>bluedevil@sctzine.com</Email>
+        </Update>
+    </History>
+</PISI>
