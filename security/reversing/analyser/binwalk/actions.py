@@ -10,8 +10,8 @@ from pisi.actionsapi import get
 
 
 def build():
-    pythonmodules.compile(pyVer="3.4")
+    pythonmodules.compile(pyVer="3")
 
 def install():
-    pythonmodules.install(pyVer="3.4")
-    pisitools.dodoc("API*", "LICENSE", "README*")
+    pythonmodules.install(pyVer="3")
+    #pisitools.dodoc("API*", "LICENSE", "README*")
