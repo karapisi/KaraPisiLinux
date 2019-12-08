@@ -14,6 +14,7 @@
         <BuildDependencies>
             <!-- mandatory dependency -->
             <Dependency>openssl-devel</Dependency>
+            <Dependency>ethtool</Dependency>
             <!--  dependency for building airodump-ng -->
             <Dependency>ethtool</Dependency>
             <Dependency>libnl-devel</Dependency>
@@ -25,8 +26,6 @@
             <Dependency>zlib-devel</Dependency>
             <!--<Dependency>pkgconfig</Dependency>-->
             <!--<Dependency>libgcrypt-devel</Dependency>-->
-            
-            <Dependency>ethtool</Dependency>
         </BuildDependencies>
         <Archive type="targz" sha1sum="7b63c7ce01cb65a4775833c6cadf7ddd82bf46d5">https://download.aircrack-ng.org/aircrack-ng-1.5.2.tar.gz</Archive>
     </Source>
