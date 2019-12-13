@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<PISI>
+    <Source>
+        <Name>python-msgpack</Name>
+        <Summary xml:lang="tr">Python msgpack modülü</Summary>
+        <Description xml:lang="tr">python-msgpack, Python için binary serileştirme yapabilen verimli bir kitaplıktır.</Description>
+    </Source>
+</PISI>
